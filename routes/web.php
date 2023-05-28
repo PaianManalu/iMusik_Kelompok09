@@ -34,7 +34,7 @@ Route::get('fetch_video', [UserController::class, 'fetch'])->name('fetch');
 Route::post('fetch_video', [UserController::class, 'fetch'])->name('fetch');
 Route::get('/fetch_video', [App\Http\Controllers\VideoController::class, 'fetch']);
 Route::get('/search', [App\Http\Controllers\VideoController::class, 'search'])->name('search');
-Route::get('/index', [App\Http\Controllers\VideoController::class, 'index']);
+Route::get('/admin', [App\Http\Controllers\VideoController::class, 'index']);
 Route::delete('/file', [App\Http\Controllers\VideoController::class, 'delete'])->name('delete.file');
 Route::put('/update/{file_id}', [App\Http\Controllers\VideoController::class, 'update'])->name('update.file');
 Route::get('/edit/{file_id}', [App\Http\Controllers\VideoController::class, 'edit'])->name('edit.file');
