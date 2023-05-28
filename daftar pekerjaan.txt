@@ -1,0 +1,15 @@
+Daftar Pekerjaan 
+28 mei 2023
+kami membuat Github baru dikarenakan github kami yang pertama mengalami kesalahan dikarenakan tidak bisa melakukan composer pada database
+           jadi kami melakukan pengulangan dimana skarang folder kami sudah biasa berjalan sesuai dengan sepertinya dimana cpmitan pertama ini kami sudah menyelesaikan
+*login dan register(pada dithub pertama)
+*home
+*dan komentar
+*akun admin(localhost:8000/admin)
+
+sekarang
+(commit 1)jam 08:00: telah melakukan gitbub baru (PENGERJAANYA BERSAMA SAMA)
+(commit 2)jam 08:00: sudah mencoba memasukkan data video kedalam database,memberikan desain ulang pada fitur login dan register(RYKA DAN ELISABETH)
+(commit 3)jam 09:00: memperbaiki web.php(PAIAN)
+(commit 4)jam 17:00: memperbaiki web.php, css(PAIAN DAN TIMBUL)
+(commit )jam 20:00: Finishing(PAIAN)
