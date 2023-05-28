@@ -1,0 +1,608 @@
+ /* admin.css */
+ .navigasi ul {
+     list-style: none;
+     margin: 0;
+     padding: 0;
+ }
+
+ .navigasi li {
+     display: inline-block;
+ }
+
+ .navigasi li a {
+     display: block;
+     padding: 10px 20px;
+     text-decoration: none;
+     color: #333;
+     transition: background-color 0.3s ease;
+     border-radius: 5px;
+ }
+
+ .navigasi li a:hover {
+     background-color: #f9f9f9;
+     color: #555;
+ }
+
+ .edit-form {
+     width: 400px;
+     margin: 0 auto;
+     padding: 20px;
+     background-color: #f5f5f5;
+     border-radius: 5px;
+ }
+
+ .upload {
+     text-align: center;
+ }
+
+ .upload form {
+     display: inline-block;
+ }
+
+ .upload label {
+     display: inline-block;
+     width: 100px;
+     text-align: left;
+     margin-bottom: 10px;
+ }
+
+
+ .upload input[type="file"] {
+     margin-left: 20px;
+ }
+
+ .upload input[type="text"] {
+     padding: 5px;
+     border: 1px solid #ccc;
+     border-radius: 3px;
+     margin-bottom: 10px;
+     width: 200px;
+ }
+
+ .upload input[type="submit"] {
+     padding: 10px 20px;
+     border: none;
+     border-radius: 5px;
+     background-color: #2196F3;
+     color: #fff;
+     cursor: pointer;
+     transition: background-color 0.3s ease;
+ }
+
+ .upload input[type="submit"]:hover {
+     background-color: #555;
+ }
+
+ .container-fluid {
+     background-color: #f9f9f9;
+     padding: 50px 0;
+ }
+
+ .logo {
+     font-size: 200px;
+     color: #555;
+ }
+
+ h2 {
+     font-size: 30px;
+     margin-top: 0;
+ }
+
+ h4 {
+     font-size: 20px;
+     font-weight: bold;
+     margin-bottom: 20px;
+ }
+
+ p {
+     font-size: 16px;
+     margin-bottom: 20px;
+ }
+
+ h2 {
+     text-align: center;
+     margin-bottom: 20px;
+ }
+
+ label {
+     display: block;
+     margin-bottom: 5px;
+ }
+
+ input[type="file"],
+ input[type="text"] {
+     width: 100%;
+     padding: 8px;
+     margin-bottom: 10px;
+     border: 1px solid #ccc;
+     border-radius: 4px;
+ }
+
+ button.btn-update {
+     width: 100%;
+     padding: 10px;
+     background-color: #4CAF50;
+     color: white;
+     border: none;
+     border-radius: 4px;
+     cursor: pointer;
+ }
+
+ button.btn-update:hover {
+     background-color: #45a049;
+ }
+
+ .container {
+     display: flex;
+     justify-content: space-between;
+ }
+
+ /*About*/
+ .col-sm-8 {
+     text-align: center;
+     padding-top: 50px;
+ }
+
+ .col-sm-8 h2 {
+     font-size: 56px;
+     font-weight: bold;
+     color: #333;
+     margin-bottom: 20px;
+ }
+
+ .col-sm-8 h4 {
+     font-size: 24px;
+     font-weight: bold;
+     color: #666;
+     margin-bottom: 20px;
+ }
+
+ .col-sm-8 p {
+     font-size: 18px;
+     color: #777;
+     margin-bottom: 30px;
+ }
+
+ .col-sm-8 button {
+     padding: 15px 30px;
+     font-size: 20px;
+     font-weight: bold;
+     text-transform: uppercase;
+     color: #fff;
+     background-color: #f44336;
+     border: none;
+     border-radius: 5px;
+     transition: background-color 0.3s ease;
+ }
+
+ .col-sm-8 button:hover {
+     background-color: #e53935;
+     cursor: pointer;
+ }
+
+
+ form {
+     width: 400px;
+     padding: 20px;
+     background-color: #f9f9f9;
+     border-radius: 5px;
+     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+ }
+
+ form label {
+     display: block;
+     margin-bottom: 10px;
+ }
+
+ form input[type="file"] {
+     display: block;
+     margin-bottom: 10px;
+ }
+
+ form input[type="text"] {
+     margin-bottom: 190px;
+ }
+
+
+ form input[type="submit"] {
+     display: block;
+     width: 100%;
+     padding: 10px;
+     border: none;
+     border-radius: 5px;
+     background-color: #2196F3;
+     color: #fff;
+     font-size: 16px;
+     cursor: pointer;
+ }
+
+ /* Kode CSS yang lain tetap sama */
+
+
+ #deskripsi {
+     width: 300px;
+     height: 50px;
+ }
+
+ .btn-upload {
+     background-color: #007bff;
+     color: #fff;
+     border: none;
+     padding: 8px 16px;
+     cursor: pointer;
+     font-size: 14px;
+     border-radius: 4px;
+     transition: background-color 0.3s ease;
+ }
+
+ .btn-upload:hover {
+     background-color: #0056b3;
+ }
+
+ .t {
+     margin-top: 20px;
+ }
+
+ /* CSS untuk video-item */
+ .video-wrapper {
+     display: flex;
+     align-items: center;
+ }
+
+ .video-item {
+     flex: 1;
+ }
+
+ .video-actions {
+     display: flex;
+     justify-content: flex-end;
+ }
+
+ /* CSS untuk video-actions */
+
+
+ /**img */
+
+
+
+ .btn-edit,
+ .btn-delete {
+     padding: 5px 10px;
+     border: none;
+     border-radius: 3px;
+     font-size: 14px;
+     color: #fff;
+     cursor: pointer;
+     transition: background-color 0.3s ease;
+ }
+
+ .btn-edit {
+     background-color: #2196F3;
+ }
+
+ .btn-delete {
+     background-color: #FF0000;
+ }
+
+ .btn-edit:hover,
+ .btn-delete:hover {
+     background-color: #555;
+ }
+
+ /* CSS untuk hover video-item */
+
+ .video-item:hover .btn-edit {
+     background-color: #0056b3;
+ }
+
+ .video-item:hover .btn-delete {
+     background-color: #555;
+ }
+
+ .jumbotron {
+     background-color: #f4511e;
+     color: #fff;
+     padding: 100px 25px;
+ }
+
+ .container-fluid {
+     padding: 60px 50px;
+ }
+
+ .bg-grey {
+     background-color: #f6f6f6;
+ }
+
+ .logo-small {
+     color: #f4511e;
+     font-size: 50px;
+ }
+
+ .logo {
+     color: #f4511e;
+     font-size: 200px;
+ }
+
+ .row {
+     display: flex;
+     justify-content: center;
+ }
+
+ .foto {
+     flex: 1;
+     margin: 10px;
+     text-align: center;
+ }
+
+ .foto img {
+     max-width: 100%;
+     height: auto;
+ }
+
+ .foto p {
+     margin: 5px 0;
+ }
+
+ .carousel-control.right,
+ .carousel-control.left {
+     background-image: none;
+     color: #f4511e;
+ }
+
+ .carousel-indicators li {
+     border-color: #f4511e;
+ }
+
+ .carousel-indicators li.active {
+     background-color: #f4511e;
+ }
+
+ .item h4 {
+     font-size: 19px;
+     line-height: 1.375em;
+     font-weight: 400;
+     font-style: italic;
+     margin: 70px 0;
+ }
+
+ .item span {
+     font-style: normal;
+ }
+
+ .panel {
+     border: 1px solid #f4511e;
+     border-radius: 0 !important;
+     transition: box-shadow 0.5s;
+ }
+
+ .panel:hover {
+     box-shadow: 5px 0px 40px rgba(0, 0, 0, .2);
+ }
+
+ .panel-footer .btn:hover {
+     border: 1px solid #f4511e;
+     background-color: #fff !important;
+     color: #f4511e;
+ }
+
+ .panel-heading {
+     color: #fff !important;
+     background-color: #f4511e !important;
+     padding: 25px;
+     border-bottom: 1px solid transparent;
+     border-top-left-radius: 0px;
+     border-top-right-radius: 0px;
+     border-bottom-left-radius: 0px;
+     border-bottom-right-radius: 0px;
+ }
+
+ .panel-footer {
+     background-color: white !important;
+ }
+
+ .panel-footer h3 {
+     font-size: 32px;
+ }
+
+ .panel-footer h4 {
+     color: #aaa;
+     font-size: 14px;
+ }
+
+ .panel-footer .btn {
+     margin: 15px 0;
+     background-color: #f4511e;
+     color: #fff;
+ }
+
+ .navbar {
+     margin-bottom: 0;
+     background-color: #f4511e;
+     z-index: 9999;
+     border: 0;
+     font-size: 12px !important;
+     line-height: 1.42857143 !important;
+     letter-spacing: 4px;
+     border-radius: 0;
+ }
+
+ .navbar li a,
+ .navbar .navbar-brand {
+     color: #fff !important;
+ }
+
+ .navbar-nav li a:hover,
+ .navbar-nav li.active a {
+     color: #f4511e !important;
+     background-color: #fff !important;
+ }
+
+ .navbar-default .navbar-toggle {
+     border-color: transparent;
+     color: #fff !important;
+ }
+
+ .admin-footer {
+     text-align: center;
+     padding: 20px;
+     background-color: #f2f2f2;
+ }
+
+ .admin-footer h2 {
+     margin-bottom: 10px;
+ }
+
+ .social-media-icons {
+     margin-top: 20px;
+ }
+
+ .social-media-icons a {
+     display: inline-block;
+     margin: 5px;
+     font-size: 20px;
+     color: #333;
+     background-color: #fff;
+     padding: 10px;
+     border-radius: 50%;
+     transition: background-color 0.3s, color 0.3s;
+ }
+
+ .social-media-icons a:hover {
+     background-color: #333;
+     color: #fff;
+ }
+
+
+ .fa {
+     padding: 20px;
+     font-size: 50px;
+     width: 100px;
+     text-align: center;
+     text-decoration: none;
+     margin: 5px 2px;
+     border-radius: 50%;
+ }
+
+
+ .fa:hover {
+     opacity: 0.7;
+ }
+
+ .fa-facebook {
+     background: #3B5998;
+     color: white;
+ }
+
+ .fa-twitter {
+     background: #55ACEE;
+     color: white;
+ }
+
+ .fa-google {
+     background: #dd4b39;
+     color: white;
+ }
+
+ .fa-linkedin {
+     background: #007bb5;
+     color: white;
+ }
+
+ .fa-youtube {
+     background: #bb0000;
+     color: white;
+ }
+
+ .fa-instagram {
+     background: #125688;
+     color: white;
+ }
+
+ .fa-pinterest {
+     background: #cb2027;
+     color: white;
+ }
+
+ .fa-snapchat-ghost {
+     background: #fffc00;
+     color: white;
+     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+ }
+
+ .fa-skype {
+     background: #00aff0;
+     color: white;
+ }
+
+ .fa-android {
+     background: #a4c639;
+     color: white;
+ }
+
+ .fa-dribbble {
+     background: #ea4c89;
+     color: white;
+ }
+
+ .fa-vimeo {
+     background: #45bbff;
+     color: white;
+ }
+
+ .fa-tumblr {
+     background: #2c4762;
+     color: white;
+ }
+
+ .fa-vine {
+     background: #00b489;
+     color: white;
+ }
+
+ .fa-foursquare {
+     background: #45bbff;
+     color: white;
+ }
+
+ .fa-stumbleupon {
+     background: #eb4924;
+     color: white;
+ }
+
+ .fa-flickr {
+     background: #f40083;
+     color: white;
+ }
+
+ .fa-yahoo {
+     background: #430297;
+     color: white;
+ }
+
+ .fa-soundcloud {
+     background: #ff5500;
+     color: white;
+ }
+
+ .fa-reddit {
+     background: #ff5700;
+     color: white;
+ }
+
+ .fa-rss {
+     background: #ff6600;
+     color: white;
+ }
+
+ footer .glyphicon {
+     font-size: 20px;
+     margin-bottom: 20px;
+     color: #f4511e;
+ }
+
+ @media screen and (max-width: 768px) {
+     .col-sm-4 {
+         text-align: center;
+         margin: 25px 0;
+     }
+ }

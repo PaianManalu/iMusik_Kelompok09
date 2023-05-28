@@ -1,0 +1,639 @@
+      body {
+          font-family: Arial, sans-serif;
+          font-size: 16px;
+          line-height: 15px;
+          ;
+      }
+
+      /* Menambahkan style ke navbar */
+      .navbar {
+          display: grid;
+          /* Menambahkan display grid */
+          grid-template-columns: repeat(1, 1fr);
+          /* Mengatur satu kolom */
+          width: 100%;
+          background-color: #555;
+          overflow: auto;
+      }
+
+      /* Menambahkan style ke link pada navbar */
+      .navbar a {
+          display: flex;
+          /* Menambahkan display flex */
+          justify-content: center;
+          /* Mengatur posisi item pada center */
+          align-items: center;
+          /* Mengatur item berada di tengah-tengah */
+          padding: 12px;
+          color: white;
+          text-decoration: none;
+          font-size: 17px;
+      }
+
+      /* Menambahkan style ketika link di hover pada navbar */
+      .navbar a:hover {
+          background-color: #000;
+      }
+
+      /* Menambahkan style ke link aktif pada navbar */
+      .active {
+          background-color: #04AA6D;
+      }
+
+      .logout-link {
+          position: fixed;
+          left: 20px;
+          bottom: 20px;
+          margin-bottom: 10px;
+      }
+
+
+      /* Menambahkan style untuk media query */
+      @media screen and (max-width: 500px) {
+          .navbar a {
+              float: none;
+              display: block;
+          }
+      }
+
+      .sidebar {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 470px;
+          height: 100%;
+          background-image: url('/images/sidebar.jpg');
+          background-size: cover;
+          background-position: center;
+
+          padding: 20px;
+          box-sizing: border-box;
+          color: #ffffff;
+          transition: all 0.3s ease-in-out;
+          overflow-y: auto;
+          /* tambahkan overflow-y untuk membuat scroll jika content terlalu panjang */
+      }
+
+      .sidebar:hover {
+          width: 450px;
+      }
+
+      .sidebar h3 {
+          font-size: 24px;
+          margin-top: 0;
+          margin-bottom: 20px;
+          text-align: center;
+          color: #ffd700;
+      }
+
+      .sidebar ul {
+          list-style-type: none;
+          margin: 10px;
+          padding: 10px;
+      }
+
+      .sidebar li {
+          padding: 20px 0;
+          transition: all 0.2s ease-in-out;
+          border-bottom: 1px solid #ffffff;
+      }
+
+      .sidebar li:last-child {
+          border-bottom: none;
+      }
+
+      .sidebar a {
+          color: #ffffff;
+          text-decoration: none;
+          padding-left: 30px;
+          /* tambahkan padding kiri untuk memberi jarak dengan garis bawah */
+      }
+
+      .sidebar a:hover {
+          color: #ffd700;
+      }
+
+      .playlist {
+          background-color: black;
+          padding: 20px;
+          border-radius: 5px;
+      }
+
+      .playlist h2 {
+          margin-top: 0;
+          font-size: 18px;
+          font-family: Arial, sans-serif;
+      }
+
+      .playlist ul {
+          list-style-type: none;
+          padding: 0;
+          margin: 0;
+      }
+
+      .playlist li {
+          margin-bottom: 10px;
+          display: flex;
+          align-items: center;
+      }
+
+      .playlist li .video-name {
+          margin-right: 10px;
+          font-family: Arial, sans-serif;
+          font-size: 14px;
+      }
+
+      .playlist li button {
+          margin-left: auto;
+          background-color: transparent;
+          border: none;
+          cursor: pointer;
+          font-family: Arial, sans-serif;
+          font-size: 14px;
+          color: #999;
+          transition: color 0.3s ease;
+      }
+
+      .playlist li button:hover {
+          color: red;
+      }
+
+      .btn-danger {
+          width: 380px;
+          padding: 40px 90px;
+          position: fixed;
+          bottom: 60px;
+          left: 10%;
+          transform: translateX(-50%);
+      }
+
+      .playlist-button {
+          background-color: gray;
+          color: white;
+          border: none;
+          padding: 10px 20px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          border-radius: 4px;
+          transition: background-color 0.3s;
+          cursor: pointer;
+      }
+
+      .playlist-button i {
+          margin-right: 5px;
+      }
+
+      .playlist-button:hover {
+          background-color: #45a049;
+      }
+
+      .main {
+          margin-left: 540px;
+          padding: 10px;
+          box-sizing: border-box;
+          background-image: url('/images/main.png');
+          height: 1000px;
+          transition: all 0.3s ease-in-out;
+      }
+
+      .main.shifted {
+          margin-left: 400px;
+          width: calc(100% - 100px);
+      }
+
+      .main h1 {
+          margin-top: 0;
+          text-align: center;
+      }
+
+      .main p {
+          line-height: 1.5;
+          font-size: 16px;
+          margin-bottom: 50px;
+      }
+
+      /* tambahkan style untuk link di Page Content */
+      .w3-container a {
+          color: #333333;
+      }
+
+      /* tambahkan style untuk heading di Page Content */
+      .w3-container h2 {
+          color: #333333;
+      }
+
+      /* User */
+      .users {
+          background-color: #f2f2f2;
+          color: #333333;
+          padding: 20px 40px 20px 40px;
+          border-radius: 5px;
+          display: flex;
+          align-items: center;
+          margin-right: 20px;
+      }
+
+      .users p {
+          margin: 0;
+          font-size: 25px;
+      }
+
+      .users b {
+          font-weight: bold;
+      }
+
+      /* Efek hover pada elemen <b> */
+      .users b:hover {
+          color: #007bff;
+          cursor: pointer;
+      }
+
+
+      /* Header */
+      .header {
+          display: flex;
+          align-items: center;
+          height: 70px;
+          background-color: #f5f5f5;
+      }
+
+      /* Sidebar Styles */
+      /* Style untuk header */
+
+
+      .search {
+          display: flex;
+          align-items: center;
+          margin-left: auto;
+          margin-right: 20px;
+      }
+
+      input[type="text"] {
+          padding: 15px 90px 20px 10px;
+          font-size: 15px;
+          border: none;
+          border-radius: 3px;
+          box-shadow: inset 0px 0px 5px #fff;
+      }
+
+      button[type="submit"] {
+          padding: 15px 30px 20px 20px;
+          font-size: 16px;
+          background-color: #777;
+          color: #fff;
+          border: none;
+          border-radius: 3px;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+      }
+
+      button[type="submit"]:hover {
+          background-color: #444;
+      }
+
+      button[type="submit"]:hover {
+          background-color: #333333;
+          color: #ffffff;
+      }
+
+      .playlist {
+          border: 1px solid #ccc;
+          padding: 10px;
+          margin-bottom: 20px;
+      }
+
+      .playlist h2 {
+          color: #f2f2f2;
+          margin-top: 0;
+      }
+
+      .playlist button {
+          background-color: black;
+      }
+
+      .playlist ul {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+      }
+
+      .playlist li {
+          margin-bottom: 1px;
+      }
+
+      .playlist li button {
+          margin-left: 10px;
+      }
+
+      .signup-button {
+          color: #ccc;
+          color: white;
+          border-radius: 10px;
+          /* Atur nilai sesuai keinginan Anda */
+      }
+
+      .signup-button h2 {
+          color: white;
+      }
+
+
+      /*body*/
+      .head {
+          background-color: black;
+          height: 150px;
+          position: relative;
+      }
+
+      .social-media {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          justify-content: right;
+          gap: 10px;
+          padding: 20px;
+      }
+
+      .social-media h1 {
+          color: #fff;
+          padding: 40px;
+          margin-right: auto;
+          font-size: 80px;
+          font-family: 'YourDesiredFont', cursive;
+          /* Ganti 'YourDesiredFont' dengan nama font yang Anda inginkan */
+      }
+
+      .social-media a {
+          margin-left: 10px;
+      }
+
+      .social-media img {
+          width: 50px;
+          height: 50px;
+
+      }
+
+      .logo {
+          width: 100px;
+          /* Atur lebar sesuai kebutuhan */
+          height: -10px;
+          /* Atur tinggi sesuai kebutuhan */
+          background-image: url('images/login.png');
+          /* Ganti 'path-to-your-image.png' dengan lokasi dan nama file gambar logo Anda */
+          background-size: cover;
+          /* Atur agar gambar logo mengisi seluruh area elemen */
+          background-position: center;
+          /* Atur posisi gambar logo menjadi di tengah-tengah */
+          text-indent: -9999px;
+          /* Mengatur teks agar tidak terlihat */
+          /* tambahkan properti lain sesuai kebutuhan Anda */
+      }
+
+
+      /* Footer */
+      .footer {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 50px;
+          background-color: #333;
+          color: white;
+      }
+
+      .footer p {
+          margin: 0;
+          font-size: 14px;
+      }
+
+      h3 {
+          width: 20px;
+      }
+
+      .video-container {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: center;
+      }
+
+      .video-wrapper {
+          margin-bottom: 35px;
+          position: relative;
+          width: 1000px;
+          /* Atur lebar sesuai kebutuhan Anda */
+          margin: 20px;
+          text-align: center;
+      }
+
+      .video-player {
+          color: #fff;
+          display: block;
+          margin: 0 auto;
+          width: 100%;
+      }
+
+      .video-title {
+          position: absolute;
+          top: 20px;
+          left: 20px;
+          color: #fff;
+          font-size: 24px;
+          font-weight: bold;
+          padding: 10px 20px;
+          border-radius: 5px;
+      }
+
+      .video-deskripsi {
+          color: #fff;
+          font-style: italic;
+          font-size: 18px;
+          margin-top: 10px;
+      }
+
+      .video-jumlah-pemutaran {
+          color: #fff;
+          font-weight: bold;
+          font-size: 16px;
+          margin-top: 10px;
+      }
+
+      .video-wrapper p {
+          color: #fff;
+          margin: 10px 0;
+          font-weight: bold;
+      }
+
+      .main1 {
+          position: static;
+          text-align: right;
+      }
+
+
+      .btn-danger {
+          background-color: #0056b3;
+          border-color: #0056b3;
+          margin: 10px;
+          width: 80px;
+          padding: 20px 90px;
+          position: fixed;
+          bottom: 120px;
+          left: 10%;
+          transform: translateX(-50%);
+      }
+
+      .btn {
+          /* Gaya dasar untuk tombol */
+          display: inline-block;
+          padding: 120px 120px;
+          border: none;
+          text-decoration: none;
+          text-align: center;
+          cursor: pointer;
+          font-weight: bold;
+          width: 1200px;
+          /* Atur lebar sesuai kebutuhan Anda */
+      }
+
+      .btn-primary {
+          /* Gaya tambahan untuk tombol dengan kelas "btn-primary" */
+          background-color: blue;
+          color: white;
+      }
+
+
+      .btn-corner {
+          position: absolute;
+          top: 10px;
+          /* Sesuaikan dengan jarak dari atas */
+          right: 10px;
+          /* Sesuaikan dengan jarak dari kanan */
+          transform: translate(-50%, 0%);
+
+          /* Untuk memposisikan tombol ke sudut kanan atas */
+      }
+
+      /* komentar*/
+      .comment-section {
+          background-color: gray;
+          padding: 20px;
+          border-radius: 5px;
+          margin-bottom: 20px;
+      }
+
+      .comment-section input[type="email"]:hover,
+      .comment-section textarea:hover,
+      .comment-section button:hover {
+          border-color: #007bff;
+          /* Warna border saat hover */
+      }
+
+      .comment-section input[type="text"] {
+          border-color: #007bff;
+          width: 1590px;
+          padding: 10px;
+          font-size: 16px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          /* Warna border saat hover */
+      }
+
+
+      .comment-section button:hover {
+          background-color: #007bff;
+          /* Warna background saat hover */
+          color: #fff;
+          /* Warna teks saat hover */
+      }
+
+
+      label {
+          display: block;
+          font-weight: bold;
+          margin-bottom: 15px;
+      }
+
+      .form-control {
+          width: 1590px;
+          padding: 10px;
+          font-size: 16px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+      }
+
+      textarea.form-control {
+          resize: vertical;
+      }
+
+      .btn {
+          padding: 10px 20px;
+          font-size: 16px;
+          background-color: #007bff;
+          color: #fff;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+      }
+
+      .btn:hover {
+          background-color: #0056b3;
+      }
+
+      /* footer*/
+      footer {
+          background-color: #333333;
+
+          color: #fff;
+          padding: 25px;
+          text-align: center;
+          font-size: 12px;
+
+      }
+
+      .footer-container {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 20px;
+      }
+
+      .contact-info {
+          text-align: left;
+      }
+
+      .contact-info h4 {
+          font-weight: bold;
+          font-size: 20px;
+          margin-bottom: 20px;
+      }
+
+      .logo-section {
+          display: flex;
+          align-items: center;
+      }
+
+      .logo-section img {
+          width: 120px;
+          height: 120px;
+          margin-right: 50px;
+
+
+      }
+
+      .footer-container p {
+          margin: 5px 0;
+      }
+
+      .footer-container a {
+          color: #333;
+          text-decoration: none;
+      }
+
+      .footer-container a:hover {
+          text-decoration: underline;
+      }
+
+      p {
+          font-size: 14px;
+      }
