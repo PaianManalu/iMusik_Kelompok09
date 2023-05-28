@@ -146,15 +146,15 @@
                 @csrf
                 <div class="form-group">
                     <label for="name">Nama:</label>
-                    <input type="text" name="name" id="name" class="form-control" required>
+                    <input type="text" name="name" id="name" class="form-control" placeholder="Masukkan Nama Anda" required>
                 </div>
                 <div class="form-group">
                     <label for="email">Email:</label>
-                    <input type="email" name="email" id="email" class="form-control" required>
+                    <input type="email" name="email" id="email" class="form-control" placeholder="Masukkan Email Aktif Anda" required>
                 </div>
                 <div class="form-group">
                     <label for="comment">Komentar:</label>
-                    <textarea name="comment" id="comment" class="form-control" rows="5" required></textarea>
+                    <textarea name="comment" id="comment" class="form-control" rows="5" placeholder="Masukkan Isi Komentar Anda" required></textarea>
                 </div>
                 <button type="submit" class="btn btn-primary">Kirim Komentar</button>
             </form>

@@ -8,7 +8,7 @@
     <title>Document</title>
     <style>
         body {
-            background-image: url("{{ asset('images/login.png') }}");
+            background-image: url("{{ asset('images/login.jpeg') }}");
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
@@ -34,15 +34,19 @@
             border-radius: 25px;
             box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
             padding: 50px;
-            max-width: 400px;
+            width: 500px;
+            height: 450px;
+            max-width: 500px;
             margin: 0 auto;
             border: 1px solid rgba(0, 0, 0, 0.2);
         }
 
 
+
+
         label {
+            font-size: 25px;
             display: block;
-            font-weight: bold;
             margin-bottom: 5px;
         }
 
@@ -69,7 +73,7 @@
             background-color: gray;
             color: #fff;
             border-radius: 30px;
-            padding: 10px 20px;
+            padding: 15px 40px;
             margin-left: 10px;
             float: right;
         }
@@ -94,21 +98,13 @@
         }
 
         .btn-primary {
-            width: 420px;
+            font-size: 20px;
+            width: 520px;
+            height: 40px;
             border-radius: 30px;
             padding: 10px 20px;
             margin-bottom: 20px;
         }
-
-        .alert-danger {
-            color: #721c24;
-            background-color: #f8d7da;
-            border-color: #f5c6cb;
-            padding: .75rem 1.25rem;
-            margin-bottom: 1rem;
-            border-radius: .25rem;
-        }
-    </style>
     </style>
 
 
@@ -128,20 +124,20 @@
             <form action="{{ route('register.action') }}" method="POST">
                 @csrf
                 <div class="mb-3">
-                    <label>Name <span class="text-danger">*</span></label>
-                    <input class="form-control" type="text" name="name" value="{{ old('name') }}" />
+                    <label>Name <span class="text-danger"></span></label>
+                    <input class="form-control" type="text" name="name" placeholder="Masukkan Nama Anda" value="{{ old('name') }}" />
                 </div>
                 <div class="mb-3">
-                    <label>Username <span class="text-danger">*</span></label>
-                    <input class="form-control" type="username" name="username" value="{{ old('username') }}" />
+                    <label>Username <span class="text-danger"></span></label>
+                    <input class="form-control" type="username" name="username" placeholder="Masukkan Username Anda" value="{{ old('username') }}" />
                 </div>
                 <div class="mb-3">
-                    <label>Password <span class="text-danger">*</span></label>
-                    <input class="form-control" type="password" name="password" />
+                    <label>Password <span class="text-danger"></span></label>
+                    <input class="form-control" type="password" name="password" placeholder="Masukkan Password Anda" />
                 </div>
                 <div class="mb-3">
-                    <label>Password Confirmation<span class="text-danger">*</span></label>
-                    <input class="form-control" type="password" name="password_confirm" />
+                    <label>Password Confirmation<span class="text-danger"></span></label>
+                    <input class="form-control" type="password" name="password_confirm" placeholder="Confirmasi Password Anda" />
                 </div>
                 <div class="mb-3">
                     <button class="btn btn-primary">Register</button>

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>iMusik</title>
+    <title>iMusic</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-XBzviN4xu4j/gu9CbDmumgdua3+j7sX3ojz2rxz39IZULYwrTg/9P6I1SY8X0IGRvDNCvMvHhEoq9QIKbwZKfw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" type="text/css" href="css/styles.css">
@@ -114,7 +114,7 @@
         <div class="head">
             <div class="container">
                 <div class="social-media">
-                    <h1>iMusik</h1>
+                    <h1>iMusic</h1>
                     <div class="signup-button">
                         <a href="<?php echo e(route('register')); ?>">
                             <h2>Sign Up</h2>
@@ -173,15 +173,15 @@
                     <?php echo csrf_field(); ?>
                     <div class="form-group">
                         <label for="name">Nama:</label>
-                        <input type="text" name="name" id="name" class="form-control" required>
+                        <input type="text" name="name" id="name" class="form-control" placeholder="Masukkan Nama Anda" required>
                     </div>
                     <div class="form-group">
                         <label for="email">Email:</label>
-                        <input type="email" name="email" id="email" class="form-control" required>
+                        <input type="email" name="email" id="email" class="form-control" placeholder="Masukkan Email Aktif Anda" required>
                     </div>
                     <div class="form-group">
                         <label for="comment">Komentar:</label>
-                        <textarea name="comment" id="comment" class="form-control" rows="5" required></textarea>
+                        <textarea name="comment" id="comment" class="form-control" rows="5" placeholder="Masukkan Isi Komentar Anda" required></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary">Kirim Komentar</button>
                 </form>

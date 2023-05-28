@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login</title>
     <style>
         body {
-            background-image: url("{{ asset('images/login.png') }}");
+            background-image: url("{{ asset('images/login.jpeg') }}");
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
-            height: 140vh;
+            height: 94vh;
             margin: 0;
             padding: 0;
         }
@@ -34,15 +34,17 @@
             border-radius: 25px;
             box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
             padding: 50px;
-            max-width: 400px;
+            width: 500px;
+            height: 280px;
+            max-width: 500px;
             margin: 0 auto;
             border: 1px solid rgba(0, 0, 0, 0.2);
         }
 
 
         label {
+            font-size: 25px;
             display: block;
-            font-weight: bold;
             margin-bottom: 5px;
         }
 
@@ -69,7 +71,7 @@
             background-color: gray;
             color: #fff;
             border-radius: 30px;
-            padding: 10px 20px;
+            padding: 15px 40px;
             margin-left: 10px;
             float: right;
         }
@@ -94,19 +96,12 @@
         }
 
         .btn-primary {
-            width: 420px;
+            font-size: 20px;
+            width: 520px;
+            height: 40px;
             border-radius: 30px;
             padding: 10px 20px;
             margin-bottom: 20px;
-        }
-
-        .alert-danger {
-            color: #721c24;
-            background-color: #f8d7da;
-            border-color: #f5c6cb;
-            padding: .75rem 1.25rem;
-            margin-bottom: 1rem;
-            border-radius: .25rem;
         }
     </style>
 
@@ -130,12 +125,12 @@
                 @csrf
                 <div class="mb-3">
                     <label>Username <span class="text-danger"></span></label>
-                    <input class="form-control" type="username" name="username" value="{{ old('username') }}" />
+                    <input class="form-control" type="username" name="username" placeholder="Masukkan Username Anda" value="{{ old('username') }}" />
                 </div>
                 <div class="mb-3">
                     <label>Password <span class="text-danger"></span></label>
-                    <input class="form-control" type="password" name="password" />
-                </div>
+                    <input class="form-control" type="password" name="password" placeholder="Masukkan Sandi Anda" />
+                </div><br>
                 <div class="mb-3">
                     <button class="btn btn-primary">Login</button>
                     <a class="btn btn-danger" href="{{ route('home') }}">Back</a>
