@@ -3,7 +3,7 @@
 
 <head>
     <!-- Theme Made By www.w3schools.com - No Copyright -->
-    <title>ADMINy</title>
+    <title>Akun ADMIN</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -23,9 +23,8 @@
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="#about">ABOUT</a></li>
                 <li><a href="#services">UPLOAD</a></li>
-                <li><a href="#portfolio">MUSIK</a></li>
-                <li><a href="#pricing">PARA ADMIN</a></li>
-                <li><a href="#contact">CONTACT</a></li>
+                <li><a href="#pricing">MUSIK</a></li>
+                <li><a href="#portfolio">PARA ADMIN</a></li>
             </ul>
         </div>
         </div>

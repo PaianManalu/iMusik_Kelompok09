@@ -11,7 +11,6 @@
 
 <body>
     <div class="container">
-        <h1><?php echo $__env->yieldContent('title', $title); ?></h1>
         <?php echo $__env->yieldContent('content'); ?>
     </div>
 </body>

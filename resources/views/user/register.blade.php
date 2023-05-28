@@ -12,61 +12,47 @@
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
-            height: 140vh;
+            height: 94vh;
             margin: 0;
             padding: 0;
         }
 
-        h2 {
+        h1 {
             text-align: center;
-            padding: 40px;
-            font-size: 35px;
-            color: black !important;
+            padding: 70px;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-size: 32px;
             font-weight: bold;
-
+            color: #333;
+            text-transform: uppercase;
+            letter-spacing: 2px;
         }
 
         form {
             background-color: rgba(255, 255, 255, 0.5);
-            /* Nilai 0.5 menunjukkan tingkat transparansi, semakin kecil semakin transparan */
             backdrop-filter: blur(10px);
             border-radius: 25px;
-            box-shadow: 10px 10px 5px #ccc;
-            padding: 20px;
-            width: 100%;
-            height: 420px;
+            box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+            padding: 50px;
             max-width: 400px;
             margin: 0 auto;
-            border: 1px solid #ccc;
-            /* Menghapus height */
+            border: 1px solid rgba(0, 0, 0, 0.2);
         }
+
 
         label {
             display: block;
-            /* Mengubah display ke block */
             font-weight: bold;
             margin-bottom: 5px;
-            /* Mengurangi margin-bottom */
         }
 
         input[type="text"],
-        input[name="username"] {
-            border-radius: 5px;
-            border: 1px solid #ccc;
-            /* Mengurangi border menjadi 1px */
-            padding: 10px;
-            width: 90%;
-            /* Mengubah width menjadi 100% */
-            margin-bottom: 20px;
-        }
-
+        input[name="username"],
         input[type="password"] {
             border-radius: 5px;
             border: 1px solid #ccc;
-            /* Mengurangi border menjadi 1px */
             padding: 10px;
-            width: 85%;
-            /* Mengubah width menjadi 100% */
+            width: 100%;
             margin-bottom: 20px;
         }
 
@@ -75,7 +61,7 @@
             color: #fff;
             border: none;
             border-radius: 3px;
-            padding: 10px 20px;
+            padding: 20px 23px;
             cursor: pointer;
         }
 
@@ -85,13 +71,12 @@
             border-radius: 30px;
             padding: 10px 20px;
             margin-left: 10px;
-            /* Mengganti margin menjadi margin-left */
+            float: right;
         }
 
         .btn-danger:hover,
         .btn-primary:hover {
             opacity: 0.8;
-            /* Mengubah nilai opacity menjadi 0.8 */
         }
 
         .form-group {
@@ -109,22 +94,11 @@
         }
 
         .btn-primary {
-            width: 100%;
+            width: 420px;
             border-radius: 30px;
             padding: 10px 20px;
             margin-bottom: 20px;
         }
-
-        .btn-danger {
-            background-color: gray;
-            color: #fff;
-            border-radius: 30px;
-            padding: 10px 20px;
-            margin-right: 10px;
-            float: right;
-            /* Menambahkan float ke kiri */
-        }
-
 
         .alert-danger {
             color: #721c24;
@@ -134,6 +108,7 @@
             margin-bottom: 1rem;
             border-radius: .25rem;
         }
+    </style>
     </style>
 
 
@@ -149,6 +124,7 @@
             <p class="alert alert-danger">{{ $err }}</p>
             @endforeach
             @endif
+            <h1>Register</h1>
             <form action="{{ route('register.action') }}" method="POST">
                 @csrf
                 <div class="mb-3">

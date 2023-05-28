@@ -20,50 +20,39 @@
         h1 {
             text-align: center;
             padding: 70px;
-
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-size: 32px;
+            font-weight: bold;
+            color: #333;
+            text-transform: uppercase;
+            letter-spacing: 2px;
         }
 
         form {
             background-color: rgba(255, 255, 255, 0.5);
-            /* Nilai 0.5 menunjukkan tingkat transparansi, semakin kecil semakin transparan */
             backdrop-filter: blur(10px);
             border-radius: 25px;
-            box-shadow: 10px 10px 5px #ccc;
-            padding: 40px;
-            width: 100%;
-            height: 260px;
+            box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+            padding: 50px;
             max-width: 400px;
             margin: 0 auto;
-            border: 1px solid #ccc;
-            /* Menghapus height */
+            border: 1px solid rgba(0, 0, 0, 0.2);
         }
+
 
         label {
             display: block;
-            /* Mengubah display ke block */
             font-weight: bold;
             margin-bottom: 5px;
-            /* Mengurangi margin-bottom */
         }
 
         input[type="text"],
-        input[name="username"] {
-            border-radius: 5px;
-            border: 1px solid #ccc;
-            /* Mengurangi border menjadi 1px */
-            padding: 10px;
-            width: 90%;
-            /* Mengubah width menjadi 100% */
-            margin-bottom: 20px;
-        }
-
+        input[name="username"],
         input[type="password"] {
             border-radius: 5px;
             border: 1px solid #ccc;
-            /* Mengurangi border menjadi 1px */
             padding: 10px;
-            width: 85%;
-            /* Mengubah width menjadi 100% */
+            width: 100%;
             margin-bottom: 20px;
         }
 
@@ -72,7 +61,7 @@
             color: #fff;
             border: none;
             border-radius: 3px;
-            padding: 10px 20px;
+            padding: 20px 23px;
             cursor: pointer;
         }
 
@@ -82,13 +71,12 @@
             border-radius: 30px;
             padding: 10px 20px;
             margin-left: 10px;
-            /* Mengganti margin menjadi margin-left */
+            float: right;
         }
 
         .btn-danger:hover,
         .btn-primary:hover {
             opacity: 0.8;
-            /* Mengubah nilai opacity menjadi 0.8 */
         }
 
         .form-group {
@@ -106,22 +94,11 @@
         }
 
         .btn-primary {
-            width: 100%;
+            width: 420px;
             border-radius: 30px;
             padding: 10px 20px;
             margin-bottom: 20px;
         }
-
-        .btn-danger {
-            background-color: gray;
-            color: #fff;
-            border-radius: 30px;
-            padding: 10px 20px;
-            margin-right: 10px;
-            float: right;
-            /* Menambahkan float ke kiri */
-        }
-
 
         .alert-danger {
             color: #721c24;
@@ -130,19 +107,6 @@
             padding: .75rem 1.25rem;
             margin-bottom: 1rem;
             border-radius: .25rem;
-
-        }
-
-        .btn-primary {
-            width: 80px;
-            border-radius: 30px;
-            padding: 10px 0px;
-            margin: 45px;
-        }
-
-        .btn-danger {
-            width: 60px;
-            height: 25px;
         }
     </style>
 
@@ -161,14 +125,15 @@
             <p class="alert alert-danger"><?php echo e($err); ?></p>
             <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
             <?php endif; ?>
+            <h1>Login</h1>
             <form action="<?php echo e(route('login.action')); ?>" method="POST">
                 <?php echo csrf_field(); ?>
                 <div class="mb-3">
-                    <label>Username <span class="text-danger">*</span></label>
+                    <label>Username <span class="text-danger"></span></label>
                     <input class="form-control" type="username" name="username" value="<?php echo e(old('username')); ?>" />
                 </div>
                 <div class="mb-3">
-                    <label>Password <span class="text-danger">*</span></label>
+                    <label>Password <span class="text-danger"></span></label>
                     <input class="form-control" type="password" name="password" />
                 </div>
                 <div class="mb-3">

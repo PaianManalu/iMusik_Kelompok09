@@ -321,8 +321,29 @@
      }
 
      h3 {
-         width: 20px;
+         font-size: 24px;
+         font-weight: bold;
+         color: #333;
+         text-align: center;
+         margin: 20px 0;
+         font-family: 'Helvetica', Arial, sans-serif;
      }
+
+     .popular {
+         font-size: 28px;
+         font-style: italic;
+         color: #ff0000;
+         /* Ganti dengan kode warna yang diinginkan */
+     }
+
+     .new {
+         font-size: 20px;
+         font-weight: normal;
+         color: #0000ff;
+         /* Ganti dengan kode warna yang diinginkan */
+     }
+
+
 
      .video-container {
          display: flex;
@@ -348,6 +369,15 @@
 
      .video-deskripsi {
          font-size: large;
+     }
+
+     .video {
+         flex: 0 0 100%;
+         margin-bottom: 20px;
+     }
+
+     h3 {
+         white-space: nowrap;
      }
 
      .main1 {
